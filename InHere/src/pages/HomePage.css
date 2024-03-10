@@ -1,0 +1,46 @@
+.pageLayout {
+    display: grid;
+    grid-template:
+            "pageInfo"
+            "pageContent";
+    grid-template-rows: auto 1fr;
+    width: auto;
+    height: 100%;
+}
+
+.pageLayout h1 {
+    grid-area: pageInfo;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.gridBackground {
+    grid-area: pageContent;
+    margin: 3% 5%;
+    background-color: #ffffff;
+    opacity: 1;
+    background-image:  radial-gradient(#000000 1.35px, transparent 1.35px), radial-gradient(#000000 1.35px, #ffffff 1.35px);
+    background-size: 54px 54px;
+    background-origin: content-box;
+}
+
+.pageContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.item {
+    flex-grow: 1;
+    width: 150px;
+    height: 150px;
+    margin: 0.5%;
+    background-color: #fb7185;
+    padding: 1em;
+    font-weight: 700;
+    color: #B2BAC2;
+    text-align: center;
+    border: 5px solid;
+    border-radius: 10px;
+}
+
