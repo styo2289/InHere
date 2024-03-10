@@ -1,4 +1,6 @@
-import styles from "./Login.module.css"
+import styles from "../components/Login/Login.module.css"
+import LoginButton from "../components/Login/LoginButton.jsx"
+
 
 function Login (){
     return (
@@ -15,12 +17,13 @@ function Login (){
                 <div className='registerLink'>
                     <p>First time in here? <a href="">Sign Up!</a></p>
                 </div>
+
+                <LoginButton/>
+
             </form>
         </div>
     )
 }
 
-{/* Here's a comment of code*/}
-{/*Another test comment to push*/}
 
 export default Login

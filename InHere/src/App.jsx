@@ -1,5 +1,4 @@
 import {
-    BrowserRouter,
     Routes,
     Route
 } from "react-router-dom";
@@ -9,7 +8,7 @@ import SideNavBar from "./components/SideNavBar/SideNavBar.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import TaskTrackerPage from "./pages/TaskTrackerPage.jsx";
 import EventStatsPage from "./pages/EventStatsPage.jsx";
-import Login from "./components/Login/Login.jsx";
+import Login from "./pages/Login.jsx";
 
 
 function App() {
@@ -17,18 +16,20 @@ function App() {
 
 
         <div className="App">
-            {/* <SideNavBar/> */}
-            <main>
-                { /*All NavSideBar is commented out to be able to display the Login for now.*/}
-                <Login/>
 
-                {/* <Routes>
-                    <Route path="/" element={ <Login/> }/>
-                    <Route path="/homePage" element={ <HomePage/> }/>
-                    <Route path="/taskTracker" element={ <TaskTrackerPage/> }/>
-                    <Route path="/eventStats" element={ <EventStatsPage/> }/>
-                </Routes> */}
+            <main>
+                <Login/>
             </main>
+
+
+            <SideNavBar/>
+
+                <Routes>
+                    <Route path='/' element={ <HomePage/> }/>
+                    <Route path='taskTracker' element={ <TaskTrackerPage/> }/>
+                    <Route path='eventStats' element={ <EventStatsPage/> }/>
+                </Routes>
+
         </div>
     )
 }

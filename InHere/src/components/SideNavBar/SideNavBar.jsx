@@ -1,10 +1,10 @@
-import styles from "../SideNavBar.module.css"
+import styles from "./SideNavBar.module.css"
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import { navData } from "./NavData.jsx";
+import { navData } from "../NavData.jsx";
 
 function SideNavBar () {
     const [open, setopen] = useState(true)
