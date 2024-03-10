@@ -1,4 +1,4 @@
-import styles from "./SideNavBar.module.css"
+import styles from "../SideNavBar.module.css"
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
