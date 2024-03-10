@@ -13,5 +13,10 @@ export const navData = [
         id: 2,
         text: "Event Statistics",
         link: "eventStats"
+    },
+    {
+        id: 3,
+        text: "Calendar",
+        link: "calendar"
     }
 ]
