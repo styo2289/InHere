@@ -13,23 +13,13 @@ import Login from "./pages/Login.jsx";
 
 function App() {
     return (
-
-
         <div className="App">
-
-            <main>
-                <Login/>
-            </main>
-
-
-            <SideNavBar/>
-
                 <Routes>
-                    <Route path='/' element={ <HomePage/> }/>
+                    <Route path='/' element={ <Login/> }/>
+                    <Route path='/home' element={ <HomePage/> }/>
                     <Route path='taskTracker' element={ <TaskTrackerPage/> }/>
                     <Route path='eventStats' element={ <EventStatsPage/> }/>
                 </Routes>
-
         </div>
     )
 }

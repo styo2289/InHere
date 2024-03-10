@@ -4,13 +4,13 @@ import LoginButton from "../components/Login/LoginButton.jsx"
 
 function Login (){
     return (
-        <div className='wrapper'>
+        <div className={styles.wrapper}>
             <form action="">
                 <h1>Login</h1>
-                <div className="input">
+                <div className={styles.input}>
                     <input type="text" placeholder="Username" required/>
                 </div>
-                <div className="input">
+                <div className={styles.input}>
                     <input type="text" placeholder="Password" required/>
                 </div>
 
